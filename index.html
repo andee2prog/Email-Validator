@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ValideX- Email Validater for You</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/email.svg" alt="email svg" />
+          <span>ValideX</span>
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Enter Your Email For Validation</h1>
+        <form action="/submit" method="post">
+          <!-- Text input for username -->
+          <label for="username"><b>Email:</b></label>
+          <input
+            placeholder="Enter Your Email Here"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+          <br /><br />
+
+          <!-- Submit button -->
+          <label id="submitBtn" class="btn" value="Submit">Submit</label>
+        </form>
+      </div>
+      <div class="container">
+        <h1 id="Cont">Results</h1>
+
+        <div style="font-weight: bold" id="resultCont">
+          Results Will Be Shown Here
+        </div>
+      </div>
+    </main>
+    <footer>Copyright ValideX | All Rights Reserved</footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
